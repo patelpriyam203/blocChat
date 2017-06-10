@@ -1,0 +1,13 @@
+body{
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.chatRooms {
+    background-color: #a5d9ff;
+    width: 20%;
+    height: 100%;
+    padding: 1rem;
+    position: fixed;
+}
