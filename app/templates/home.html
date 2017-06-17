@@ -1,5 +1,6 @@
 <div class="chatRooms">
-    <h1>Bloc Chat</h1>
+    <h2>Bloc Chat</h2>
+    <button class="newRoomButton" type="button" ng-click="home.addRoom()">New Room</button>
     <div ng-repeat="room in home.rooms track by $index">
         Room {{ $index + 1 }}
     </div>

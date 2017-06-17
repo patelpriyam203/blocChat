@@ -1,0 +1,13 @@
+<section class="modalBox">
+    <div class="modalHeader">
+        <h3 class="modalTitle">Create new room</h3>
+    </div>
+    <div class="modalBody">
+        <h4 class="modalPrompt">Enter a room name</h4>
+            <input type="text" name="chatRoomName" ng-model="modal.newRoom.name">
+    </div>
+    <div class="modalFooter">
+        <button class="cancelButton" type="button" ng-click="modal.cancel()">Cancel</button>
+        <button class="createNewRoomButton" type="button" ng-click="modal.submit()">Create room</button>
+    </div>
+</section>
