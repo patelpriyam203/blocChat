@@ -1,0 +1,12 @@
+<section class="modalBox">
+    <div class="modalHeader">
+        <h3 class="modalTitle">Set a username</h3>
+    </div>
+    <div class="modalBody">
+        <h4 class="modalPrompt">This name will appear when you send messages</h4>
+            <input type="text" name="validUserName" ng-model="modal.userName">
+    </div>
+    <div class="modalFooter">
+        <button class="setUserName" type="button" ng-click="modal.createUserName()" ng-disabled="modal.userName == null">Set username</button>
+    </div>
+</section>

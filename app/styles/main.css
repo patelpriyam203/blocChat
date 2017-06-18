@@ -13,6 +13,7 @@ html{
     color: black;
 }*/
 
+
 .chatRooms {
     position: fixed;
     background-color: #DEDEDE;
@@ -21,6 +22,7 @@ html{
     width: 25%;
     height: 100%;
     padding: 1rem;
+    display: inline-block;
 }
 
 .chatRooms h2 {
