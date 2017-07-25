@@ -1,41 +1,84 @@
-html{
-    /*font-family: 'Titillium Web', sans-serif;*/
-    /*color: darkgrey;*/
+html {
     height: 100%;
     font-size: 100%;
-    margin: 0;
 }
 
-/*.chatRooms .newRoomButton {
-    position: relative;
-    left:160px;
-    top: -30px;
-    color: black;
-}*/
+body {
+    background-color: white;
+}
 
+/*Sidebar*/
+
+.sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    height: 100%;
+    background-color: lightgray;
+    z-index: 1;
+}
+
+.roomList {
+    padding-left: 10px;
+    margin-bottom: 5px;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.roomList .newRoomButton {
+    margin: 0 5px;
+}
+
+h2 {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.sidebar .roomName {
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sidebar .roomName:hover {
+    cursor: pointer;
+}
+
+/*Messages*/
 
 .chatRooms {
     position: fixed;
-    background-color: #DEDEDE;
-    font-family: 'Titillium Web', sans-serif;
-    color: darkgrey;
-    width: 25%;
+    top: 0px;
+    left: 250px;
+    width: 80%;
     height: 100%;
-    padding: 1rem;
+    background-color: white;
+    z-index: 1;
+    overflow: scroll;
+}
+
+
+.message {
+    padding-right: 10px;
+}
+
+.message .userName {
+    font-weight: bold;
+}
+
+.message .sentAt {
+    float: right;
+    padding-right: 100px;
+}
+
+.message .userName .sentAt {
     display: inline-block;
 }
 
-.chatRooms h2 {
-    position: relative;
-    color: black;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-.chatRooms .newRoomButton {
-    position: absolute;
-    top: 30px;
-    right: 20px;
-    z-index: 0;
+.message .content {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
 }

@@ -2,7 +2,7 @@
     function ModalCtrl(Room, $uibModalInstance, $cookies) {
         this.createRoom = function() {
             Room.add(this.newRoom, this.cancel);
-            // $uibModalInstance.close();
+            $uibModalInstance.close();
         };
 
         this.cancel = function() {
