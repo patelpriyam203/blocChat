@@ -18,4 +18,8 @@
         <div class="sentAt">{{ message.sentAt }}</div>
         <div class="content">{{ message.content }}</div>
     </div>
+    <div class="messageBody">
+        <input type="text" name="input" placeholder="Type Your Message Here" class="messageBox" ng-model="this.newMessage.content">
+        <button class="btnNewMessage" type="button" ng-click="this.sendMessage()">Send Message</button>
+    </div>
 </div>

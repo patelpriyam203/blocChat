@@ -82,3 +82,17 @@ h2 {
     padding-bottom: 5px;
     display: inline-block;
 }
+
+.messageBody {
+    bottom: 0;
+    padding-bottom: 5px;
+    position: fixed;
+}
+
+.messageBox {
+    width: 500px;
+}
+
+.btnNewMessage {
+  width: 800px;
+}
